@@ -1,2 +1,2 @@
 # Leetcode-Trio
-this is a test!
+Record leetcode problem solving
