@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/Leetcode-Trio.iml" filepath="$PROJECT_DIR$/.idea/Leetcode-Trio.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/goLeetCode.iml" filepath="$PROJECT_DIR$/.idea/goLeetCode.iml" />
+>>>>>>> 05a0424 (upload go Leetcode)
     </modules>
   </component>
 </project>

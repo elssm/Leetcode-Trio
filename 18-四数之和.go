@@ -1,4 +1,4 @@
-package Leetcode_Trio
+package goLeetCode
 
 import "sort"
 
