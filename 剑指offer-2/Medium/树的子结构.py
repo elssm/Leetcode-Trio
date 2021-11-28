@@ -12,14 +12,16 @@ class Solution(object):
         :type B: TreeNode
         :rtype: bool
         """
+        # 如果A和B有一个是空，直接返回False
         if not A or not B:
             return False
-        return self.helper(A, B) or self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B)
+        # 判断A的整体结构和B的整体结构或者A的左子树和B的整体或者A的右子树和B的整体
+        return self.is_sub(A, B) or self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B)
 
-    def helper(self, A, B):
+    def is_sub(self, A, B):
         if not B:
             return True
         if not A or A.val != B.val:
             return False
             # 分别判断左右子树的值是否相等
-        return self.helper(A.left, B.left) and self.helper(A.right, B.right)
+        return self.is_sub(A.left, B.left) and self.is_sub(A.right, B.right)
